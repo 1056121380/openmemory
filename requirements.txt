@@ -1,0 +1,5 @@
+# OpenMemory Dependencies
+# Core engine & Client MCP require Python 3.10+ standard library only.
+# Server (Web Console & REST API) requirements:
+fastapi>=0.110.0
+uvicorn>=0.28.0

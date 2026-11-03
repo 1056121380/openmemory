@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openmemory-hub"
+version = "2.0.0"
+description = "Universal Local-First AI Memory Governance & Provenance Hub"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "PolyForm Noncommercial 1.0.0"}
+keywords = ["mcp", "memory", "agent", "llm", "cursor", "claude", "governance"]
+authors = [
+  {name = "OpenMemory Contributors"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.28.0",
+]
+
+[project.scripts]
+openmemory = "client.mcp_server:start_mcp_server"
+openmemory-server = "server.app:start_server"
+openmemory-wizard = "client.wizard:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*", "client*", "server*"]

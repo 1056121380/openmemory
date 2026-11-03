@@ -1,0 +1,24 @@
+# ==============================================================================
+# OpenMemory Client Configuration Example
+# ==============================================================================
+
+[client]
+# "local" for 100% offline embedded SQLite, or "remote" to connect to an OpenMemory server
+mode = "local"
+
+# Storage path for local database (optional; defaults to ~/.openmemory/memory.db)
+# db_path = "~/.openmemory/memory.db"
+
+# Server configuration (only required if mode = "remote")
+# server_url = "http://localhost:8080"
+# token = ""
+
+[governance]
+# Default sensitivity ceiling for memory injection: L0_public, L1_work, L2_private
+default_sensitivity = "L1_work"
+
+# Enable automatic time-decay check on startup
+enable_decay = true
+
+# Days of inactivity before AI inferences begin decaying
+decay_grace_days = 14
