@@ -12,7 +12,7 @@
 
 *Every AI tool tries to "store and retrieve" your context. Nobody handles "auditing, correcting, decaying, and forgetting".*
 
-[English](#features) | [中文说明](#核心特性) | [Architecture Whitepaper](docs/ARCHITECTURE.md) | [MCP Guide](docs/MCP_GUIDE.md)
+[📖 中文详细使用说明](docs/USER_MANUAL.md) | [Architecture Whitepaper](docs/ARCHITECTURE.md) | [MCP Guide](docs/MCP_GUIDE.md) | [100% Local-First Guide](docs/LOCAL_FIRST.md)
 
 </div>
 
@@ -159,6 +159,7 @@ OpenMemory is built with strict privacy-by-design:
 
 ## 📖 Documentation
 
+- [**📖 详细使用说明手册 (User Manual - 从小白配置到日常范例)**](docs/USER_MANUAL.md)
 - [Architecture Whitepaper (Six Layers in Depth)](docs/ARCHITECTURE.md)
 - [MCP Integration Guide (Cursor, Claude, Windsurf, Cline, Codex)](docs/MCP_GUIDE.md)
 - [100% Local-First Guide](docs/LOCAL_FIRST.md)
